@@ -3,6 +3,8 @@ from flask import json, jsonify
 from models import Classifier
 from utils.preprocessing import normalize
 
+from sklearn.svm import LinearSVC
+
 import pickle
 
 
