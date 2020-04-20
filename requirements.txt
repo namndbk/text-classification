@@ -1,11 +1,12 @@
 Flask==1.1.1
+Flask-WTF==0.14.3
+ftfy==5.7
+Jinja2==2.10.3
+nltk==3.5
+numpy==1.18.2
 requests==2.22.0
 scikit-learn==0.22.1
-scipy==1.4.1
 sklearn==0.0
-sklearn-crfsuite==0.3.6
 unicode==2.7
 Unidecode==1.1.1
-ftfy
-Jinja2
 gunicorn
