@@ -49,8 +49,8 @@ def api():
 
 
 if __name__ == "__main__":
-	models = Classifier()
-	models.load_model("model/colabs/model_v1")
-	with open("model/colabs/transform", "rb") as f:
-    	transform = pickle.load(f)
+    models = Classifier()
+    models.load_model("model/colabs/model_v1")
+    with open("model/colabs/transform") as f:
+        transform = pickle.load(f)
     app.run()
