@@ -7,4 +7,5 @@ sklearn-crfsuite==0.3.6
 unicode==2.7
 Unidecode==1.1.1
 ftfy
-gunicorn
+Jinja2==2.10
+gunicorn==19.9.0
