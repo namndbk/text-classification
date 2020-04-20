@@ -5,7 +5,7 @@ import pickle
 import os
 
 
-from utils.preprocessing import normalize
+from preprocessing import normalize
 
 
 def load_dataset(file_name):
