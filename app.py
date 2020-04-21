@@ -6,6 +6,7 @@ from utils.preprocessing import normalize
 from sklearn.svm import LinearSVC
 
 import pickle
+import os
 
 
 app = Flask(__name__)
@@ -53,4 +54,4 @@ if __name__ == "__main__":
     models.load_model("model/colabs/model_v1")
     with open("model/colabs/transform", "rb") as f:
         transform = pickle.load(f)
-    app.run()
+    app.run(host="0.0.0.0", port=os.environ['PORT'])
