@@ -47,23 +47,23 @@ def dump_data(file_name, data):
         pickle.dump(corpus, f)
 
 
-if __name__ == "__main__":
-    current_path = os.getcwd()
-    train_path = os.path.join(current_path, "data", "train_full")
-    test_path = os.path.join(current_path, "data", "test_full")
-    data_train = []
-    data_test = []
-    for folder in os.listdir(train_path):
-        folder = os.path.join(train_path, folder)
-        data = load_data(folder)
-        for x in data:
-            data_train.append(x)
-    dump_data("train", data_train)
-    del(data_train)
-    for folder in os.listdir(test_path):
-        folder = os.path.join(test_path, folder)
-        data = load_data(folder)
-        for x in data:
-            data_test.append(x)
-    dump_data("test", data_test)
-    del(data_test)
+# if __name__ == "__main__":
+#     current_path = os.getcwd()
+#     train_path = os.path.join(current_path, "data", "train_full")
+#     test_path = os.path.join(current_path, "data", "test_full")
+#     data_train = []
+#     data_test = []
+#     for folder in os.listdir(train_path):
+#         folder = os.path.join(train_path, folder)
+#         data = load_data(folder)
+#         for x in data:
+#             data_train.append(x)
+#     dump_data("train", data_train)
+#     del(data_train)
+#     for folder in os.listdir(test_path):
+#         folder = os.path.join(test_path, folder)
+#         data = load_data(folder)
+#         for x in data:
+#             data_test.append(x)
+#     dump_data("test", data_test)
+#     del(data_test)
