@@ -54,4 +54,4 @@ if __name__ == "__main__":
     models.load_model("model/colabs/model_v1")
     with open("model/colabs/transform", "rb") as f:
         transform = pickle.load(f)
-    app.run(host="0.0.0.0", port=os.environ['PORT'])
+    app.run()
