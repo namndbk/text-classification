@@ -1,11 +1,9 @@
-Flask
-Flask-WTF
 ftfy
-Jinja2
-numpy
-requests
 scikit-learn
 sklearn
-unicode
-Unidecode
-gunicorn
+Flask==1.0.2
+Jinja2==2.10
+numpy==1.16
+unicode==2.7
+Unidecode==1.1.1
+gunicorn==19.9.0

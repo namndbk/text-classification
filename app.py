@@ -4,6 +4,7 @@ from models import Classifier
 from utils.preprocessing import normalize
 
 from sklearn.svm import LinearSVC
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 import pickle
 import os
