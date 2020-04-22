@@ -2,7 +2,6 @@ ftfy
 scikit-learn
 sklearn
 Flask==1.0.2
-Jinja2==2.10
 numpy==1.16
 unicode==2.7
 Unidecode==1.1.1
