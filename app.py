@@ -25,7 +25,7 @@ def predict(text):
 @app.route("/predict", methods=["GET","POST"])
 def home():
     if request.method == "GET":
-        return render_template("index.html")
+        return render_template("index.html", message=str(flag))
     else:
         doc = request.form["document"]
         out = predict(doc)
@@ -51,8 +51,12 @@ def api():
 
 
 if __name__ == "__main__":
-    models = Classifier()
-    models.load_model("model/colabs/model_v1")
-    with open("model/colabs/transform", "rb") as f:
-        transform = pickle.load(f)
+    try:
+        models = Classifier()
+        models.load_model("./model/colabs/model_v1")
+        with open("./model/colabs/transform", "rb") as f:
+            transform = pickle.load(f)
+        flag = True
+    except:
+        flag = False
     app.run()
