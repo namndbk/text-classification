@@ -12,6 +12,9 @@ import os
 
 app = Flask(__name__)
 
+global models
+global transform
+
 
 def predict(text):
     text = normalize(text)
@@ -25,7 +28,7 @@ def predict(text):
 @app.route("/predict", methods=["GET","POST"])
 def home():
     if request.method == "GET":
-        return render_template("index.html", message=str(flag))
+        return render_template("index.html")
     else:
         doc = request.form["document"]
         out = predict(doc)
